@@ -72,18 +72,28 @@
     animation: personaEntrada 2s ease-out;
 }
 
-        }
-
         .texto h3{
-            width: 150px;
-            height: 100px;
-            position: absolute;
-            top: 420px;
-            left: 70px;
-            color: rgb(0, 0, 0);
-            font-size: 30px;
-            z-index: 4;
-        }
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: 420px;
+    left: 70px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    z-index: 4;
+    animation: textoEntrada 2s ease-out;
+}
+
+@keyframes textoEntrada{
+    from{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
 
         
         .datos ul{
